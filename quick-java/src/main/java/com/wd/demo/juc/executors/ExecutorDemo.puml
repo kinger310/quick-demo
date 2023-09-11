@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Executor
+interface ExecutorService
+interface ScheduledExecutorService
+abstract class AbstractExecutorService
+
+Executor <|-- ExecutorService
+
+ExecutorService <|.. AbstractExecutorService
+ExecutorService <|-- ScheduledExecutorService
+AbstractExecutorService <|-- ThreadPoolExector
+ThreadPoolExector <|-- ScheduledThreadPoolExecutor
+ScheduledExecutorService <|.. ScheduledThreadPoolExecutor
+
+ThreadPoolExector -* Executors : < 创建
+
+@enduml

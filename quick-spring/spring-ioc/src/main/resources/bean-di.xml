@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--基于setter方法注入   -->
+    <bean id="book" class="com.wd.demo.spring6.iocxml.di.Book">
+        <property name="name" value="JAVA"></property>
+        <property name="author" value="王迪"></property>
+    </bean>
+
+
+    <!--基于构造器r方法注入   -->
+    <bean id="bookCon" class="com.wd.demo.spring6.iocxml.di.Book">
+        <constructor-arg name="name" value="Python"></constructor-arg>
+        <constructor-arg name="author" value="wd"></constructor-arg>
+    </bean>
+
+
+    <!-- more bean definitions go here -->
+
+</beans>

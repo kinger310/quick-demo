@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="..." class="...">-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="base.iocxml.spring6.com.wd.demo.springboot.User">-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    NoUniqueBeanDefinitionException&ndash;&gt;-->
+<!--    <bean id="user2" class="base.iocxml.spring6.com.wd.demo.springboot.User">-->
+<!--        &lt;!&ndash; collaborators and configuration for this bean go here &ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="userDao" class="com.wd.demo.spring6.iocxml.base.UserDaoImpl">
+    </bean>
+    <bean id="userDao2" class="com.wd.demo.spring6.iocxml.base.UserDaoImpl2">
+    </bean>
+
+
+    <!-- more bean definitions go here -->
+
+</beans>
